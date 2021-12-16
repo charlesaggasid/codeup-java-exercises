@@ -56,23 +56,29 @@ import java.util.Scanner;
 //
 //            The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle
 //            is equal to 2 times the length plus 2 times the width.
-float length, width, perimeter, area;
-Scanner scanPerimeter = new Scanner(System.in);
 
-//Input length
-            System.out.println("Enter length of rectangle: ");
-            length = scanPerimeter.nextFloat();
+//            Scanner scanPerimeter = new Scanner(System.in);
+//
+//            System.out.println("Enter length of rectangle: ");
+//            String length = scanPerimeter.nextLine();
 
-            System.out.println("Enter width of rectangle: ");
-            width = scanPerimeter.nextFloat();
-
-            //Calculate perimeter of rectangle
-            perimeter = 2 * (length + width);
-
-            area = length * width;
-
-            System.out.println("Perimeter of rectangle is " + perimeter + ".");
-            System.out.println("Area of rectangle is " + area + ".");
+//float length, width, perimeter, area;
+//Scanner scanPerimeter = new Scanner(System.in);
+//
+////Input length
+//            System.out.println("Enter length of rectangle: ");
+//            length = scanPerimeter.nextLine();
+//
+//            System.out.println("Enter width of rectangle: ");
+//            width = scanPerimeter.nextFloat();
+//
+//            //Calculate perimeter of rectangle
+//            perimeter = 2 * (length + width);
+//
+//            area = length * width;
+//
+//            System.out.println("Perimeter of rectangle is " + perimeter + ".");
+//            System.out.println("Area of rectangle is " + area + ".");
 
         }
     }
