@@ -17,7 +17,7 @@ import java.util.Scanner;
 //             System.out.printf("This is the int your entered: %d", userInput);
 
 //Prompt a user to enter 3 words, and store each of them in a separate variable. Then, display them back in the console, each on a newline.
-//What happens if you enter less than 3 words?  Using next, will proceed to next until all string is asked.
+//What happens if you enter less than 3 words?  Using next, it will
 //What happens if you enter more than 3 words? nothing
 
 //             Scanner myObj = new Scanner(System.in);
@@ -57,28 +57,23 @@ import java.util.Scanner;
 //            The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle
 //            is equal to 2 times the length plus 2 times the width.
 
-//            Scanner scanPerimeter = new Scanner(System.in);
-//
+//            Scanner scanner = new Scanner(System.in);
 //            System.out.println("Enter length of rectangle: ");
-//            String length = scanPerimeter.nextLine();
+//            String length = scanner.nextLine();
 
-//float length, width, perimeter, area;
-//Scanner scanPerimeter = new Scanner(System.in);
-//
-////Input length
-//            System.out.println("Enter length of rectangle: ");
-//            length = scanPerimeter.nextLine();
-//
-//            System.out.println("Enter width of rectangle: ");
-//            width = scanPerimeter.nextFloat();
-//
-//            //Calculate perimeter of rectangle
-//            perimeter = 2 * (length + width);
-//
-//            area = length * width;
-//
-//            System.out.println("Perimeter of rectangle is " + perimeter + ".");
-//            System.out.println("Area of rectangle is " + area + ".");
+float length, width, perimeter, area;
+Scanner scanAreaPerimeter = new Scanner(System.in);
+
+//Input
+            System.out.println("Enter length of rectangle: ");
+            length = scanAreaPerimeter.nextFloat();
+            System.out.println("Enter width of rectangle: ");
+            width = scanAreaPerimeter.nextFloat();
+            //Calculate area and perimeter of rectangle.
+            perimeter = 2 * (length + width);
+            area = length * width;
+            System.out.println("Perimeter of rectangle is " + perimeter + ".");
+            System.out.println("Area of rectangle is " + area + ".");
 
         }
     }
