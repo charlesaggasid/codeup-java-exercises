@@ -73,26 +73,28 @@ public class ControlFlowExercises {
 //        Display a table of squares and cubes from 1 to the value entered.
 //        Only continue if the user agrees to.
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Would you like to enter a number?");
-        String userAnswersYesOrNo = scanner.Ne
-        if (userAnswersYesOrNo == "yes" ){
+        boolean askUserToContinue = true;
 
-        }
-        System.out.println("What number would you like to go up to?:");
+        do {
+            System.out.println("What number would you like to go up to?:");
+            int userNum = scanner.nextInt();
+            System.out.println(); //space
+            System.out.println("Here is your table!");
+            System.out.println(); //space
+            System.out.println("number | squared | cubed");
+            System.out.println("------ | ------- | -----");
 
-         // Prompt the user to enter an integer.
-        // Ask if the user wants to continue.
+            for(int i = 1; i <= userNum; i++){
+                System.out.printf("%-6d | %-7d | %d\n", i, i * i, i * i * i); //Print Table
+            }
+            System.out.println("Do you want to continue?");
+            String storeUserResponse = scanner.nextLine();
+            if(!storeUserResponse.equalsIgnoreCase("yes")) {
+                askUserToContinue = false;
+            }
+        } while (askUserToContinue);
 
 
-
-        int num = scanner.nextInt(); // Assume that the user will enter valid data.
-        System.out.println("Here is your table!");
-        System.out.println("number   |squared   |cubed");
-        System.out.println("------   |-------   |-----");
-
-        for(int i = 1; i <= num; i++){
-            System.out.printf("%d        |%d         |%d%n", i, i*i, i*i*i);
-        }
 
 //        4. Convert given number grades into letter grades.
 //
@@ -111,8 +113,6 @@ public class ControlFlowExercises {
 
 //        Bonus
 //        Edit your grade ranges to include pluses and minuses (ex: 99-100 = A+).
-
-
 
 
 
