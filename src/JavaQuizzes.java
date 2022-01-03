@@ -19,31 +19,50 @@ public class JavaQuizzes {
 
 //        System.out.println(num1 + "x" + num2 + "=" + num1 * num2);
 //6. Write a Java program to print the sum (addition), multiply, subtract, divide and remainder of two numbers.
-        System.out.println("Input first number: ");
-        int num1 = in.nextInt();
+//        System.out.println("Input first number: ");
+//        int num1 = in.nextInt();
 
-        System.out.println("Input second number: ");
-        int num2 = in.nextInt();
+//        System.out.println("Input second number: ");
+//        int num2 = in.nextInt();
 
-        System.out.println(num1 + " + " + num2 + " = " +
-                (num1 + num2));
+//        System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
+//        System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+//        System.out.println(num1 + " x " + num2 + " = " + (num1 * num2));
+//        System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
+//        System.out.println(num1 + " mod " + num2 + " = " + (num1 % num2));
 
-        System.out.println(num1 + " - " + num2 + " = " +
-                (num1 - num2));
+/** Another solution
+* import java.util.Scanner;
+ * public class Main {
+ *  public static void main(String[] args) {
+ *   Scanner scanner = new Scanner(System.in);
+ *   System.out.println("Input the first number: ");
+ *   int n1 = scanner.nextInt();
+ *   System.out.println("Input the second number: ");
+ *   int n2 = scanner.nextInt();
+ *   int sum = n1 + n2;
+ *   int minus = n1 - n2;
+ *   int multiply = n1 * n2;
+ *   int subtract = n1 + n2;
+ *   int divide = n1 / n2;
+ *   int rnums = n1 % n2;
+ *   System.out.printf("Sum = %d\nMinus = %d\nMultiply = %d\nSubtract = %d\nDivide = %d\nRemainderOf2Numbers = %d\n ", sum, minus, multiply, subtract, divide, rnums);
+ *  }
+ * }
+* **/
 
-        System.out.println(num1 + " x " + num2 + " = " +
-                (num1 * num2));
+//7. Write a Java program that takes a number as input and prints its multiplication table upto 10.
+//System.out.print("Input a number: ");
+//int num1 = in.nextInt();
 
-        System.out.println(num1 + " / " + num2 + " = " +
-                (num1 / num2));
+//for (int i=1; i<=10; i++){
+//    System.out.println(num1 + " * " + i + " = " + (num1 * i));
+//}
 
-        System.out.println(num1 + " mod " + num2 + " = " +
-                (num1 % num2));
+//9. Write a Java program to compute the specified expressions and print the output.
+        double result = (25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5);
+        System.out.println(result);
 
-
-
-
-
-
+//10.
     }
 }

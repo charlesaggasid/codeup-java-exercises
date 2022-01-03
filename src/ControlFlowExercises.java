@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
-    // 1. LOOP BASICS
+//     1. LOOP BASICS
 //     a. While
 //        Create an integer variable i with a value of 5.
 
@@ -15,7 +15,7 @@ public class ControlFlowExercises {
 //        for(int i = 5; i <= 15; i++){
 //            System.out.print(i + " ");
 //        }
-
+//
 //          int i = 5;
 //
 //          while (i <= 15) {
@@ -104,17 +104,33 @@ public class ControlFlowExercises {
 //        Assume that the user will enter valid integers for the grades.
 //        The application should only continue if the user agrees to.
 //        Grade Ranges:
+           System.out.println("Please enter grade from 0-100");
+           int userInput = scanner.nextInt();
+           int A = 100; // a+
+           int B = 87;
+           int C = 79;
+           int D = 66;
+           int F = 59;
 
-//        A : 100 - 88
-//        B : 87 - 80
-//        C : 79 - 67
-//        D : 66 - 60
-//        F : 59 - 0
+           String userAnswer;
+         do{
+            if (userInput >= A){
+                System.out.println("You got " + userInput + " score." + "That's an A+!");
+            } else if(userInput >= B){
+                System.out.println("You got " + userInput + " score." + "That's a B!");
+            } else if(userInput >= C) {
+                System.out.println("You got " + userInput + " score." + "That's a C!");
+            } else if (userInput >= D){
+                System.out.println("You got " + userInput + " score." + "That's a D!");
+            }else if (userInput >= F){
+                System.out.println("You got " + userInput + " score." + "That's an F!");
+            }
+             System.out.println("Would you like to continue?");
+             userAnswer = scanner.next();
+         } while (userAnswer.equalsIgnoreCase("yes"));
 
 //        Bonus
 //        Edit your grade ranges to include pluses and minuses (ex: 99-100 = A+).
-
-
 
 
     }
