@@ -7,10 +7,14 @@ public class Warmups {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println(" What did you eat for breakfast?");
-        String userBreakfast = scanner.nextLine(); // Printing out a question, asking.
-        System.out.printf("Your breakfast today is %s.", userBreakfast);
+//        System.out.println(" What did you eat for breakfast?");
+//        String userBreakfast = scanner.nextLine(); // Printing out a question, asking.
+//        System.out.printf("Your breakfast today is %s.", userBreakfast);
+        startDay();
 
+    }
 
+    public static void startDay(){
+       System.out.println("Brain loading... Done!");
     }
 }
