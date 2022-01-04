@@ -81,7 +81,7 @@ public class StringsLecture {
 
                //lasIndexOf
                String band = "Queen";
-            System.out.println(band.las);
+//            System.out.println(band.las);
 
 
 
