@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Random;
+//import java.util.Random;
 public class HighLow {
     public static void main(String[] args) {
 
@@ -13,54 +13,51 @@ public class HighLow {
 //    The specs for the game are:
 //
 //    Game picks a random number between 1 and 100.
-        double doubleRandomNumber = Math.floor(Math.random() * 100) + 1;
-        int randomNumber = (int)doubleRandomNumber;
-        System.out.println("(Random number is: "+randomNumber+")");
-
-//    Prompts user to guess the number.
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Pick a number from 1-100: ");
-        int guessedNum = scanner.nextInt();
-        System.out.println("Picked number is: "+guessedNum+"\n");
-//    All user inputs are validated.
-//    If user's guess is less than the number, it outputs "HIGHER".
-//    If user's guess is more than the number, it outputs "LOWER".
-//    If a user guesses the number, the game should declare "GOOD GUESS!"
-
-        if(guessedNum < randomNumber){
-            System.out.println("HIGHER");
-        } else if(guessedNum > randomNumber) {
-            System.out.println("LOWER");
-        } else if (guessedNum == randomNumber) {
-            System.out.println("GOOD GUESS");
-        }
+//        double doubleRandomNumber = Math.floor(Math.random() * 100) + 1;
+//        int randomNumber = (int)doubleRandomNumber;
+//        System.out.println("(Random number is: "+randomNumber+")");
+//
+////    Prompts user to guess the number.
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Pick a number from 1-100: ");
+//        int guessedNum = scanner.nextInt();
+//        System.out.println("Picked number is: "+guessedNum+"\n");
+////    All user inputs are validated.
+////    If user's guess is less than the number, it outputs "HIGHER".
+////    If user's guess is more than the number, it outputs "LOWER".
+////    If a user guesses the number, the game should declare "GOOD GUESS!"
+//        if(guessedNum < randomNumber){
+//            System.out.println("HIGHER");
+//        } else if(guessedNum > randomNumber) {
+//            System.out.println("LOWER");
+//        } else if (guessedNum == randomNumber) {
+//            System.out.println("GOOD GUESS");
+//        }
 //    Hints
 //    Use the random method of the java.lang.Math class to generate a random number.
 
+
+
 // Try do while.
 
-//        public static void main(String[] args) {
-//            Scanner scanner = new Scanner(System.in);
-//            System.out.println("Welcome to my number guessing game!");
-//            int myNumber = (int)Math.floor(Math.random() * 100);
-//            int userInput;
-//
-//            System.out.println("Guess my number!");
-//
-//            do{
-//                System.out.println("Choose a number between 1-100:");
-//                userInput = scanner.nextInt();
-//
-//                if(userInput > myNumber){
-//                    System.out.println("LOWER");
-//                }else if(userInput < myNumber){
-//                    System.out.println("HIGHER");
-//                }else{
-//                    System.out.println("GOOD GUESS");
-//                }
-//            }while(userInput != myNumber);
-//        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("HIGH LOW Guess Number Game!");
+        int randomNumber = (int)Math.floor(Math.random() * 100);
+        System.out.println(randomNumber);
+        int guessedNum;
 
+        do{
+            System.out.println("Pick a number from 1-100: ");
+             guessedNum = scanner.nextInt();
+
+            if(guessedNum < randomNumber){
+                System.out.println("HIGHER");
+            } else if(guessedNum > randomNumber) {
+                System.out.println("LOWER");
+            } else {
+                System.out.println("GOOD GUESS");
+            }
+        }while(guessedNum != randomNumber);
 
     }
 }
