@@ -35,7 +35,11 @@ public class MethodsExercises {
 
     //Subs
     public static int Subs(int firstNum, int secondNum) {
+        if (firstNum < secondNum) {
         return firstNum - secondNum;
+        } else {
+            return firstNum - secondNum;
+        }
     }
 
     //Multiply

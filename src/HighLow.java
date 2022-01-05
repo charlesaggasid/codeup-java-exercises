@@ -11,7 +11,7 @@ public class HighLow {
 //    You are going to build a high-low guessing game. Create a class named HighLow inside of src.
 //
 //    The specs for the game are:
-//
+
 //    Game picks a random number between 1 and 100.
 //        double doubleRandomNumber = Math.floor(Math.random() * 100) + 1;
 //        int randomNumber = (int)doubleRandomNumber;
