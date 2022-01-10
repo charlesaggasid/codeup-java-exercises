@@ -35,13 +35,6 @@ public class HelloWorld {
 
 // 12 Object is the most generic type in Java. You can assign any value to a variable of type Object. What do you think will happen when the following code is run?
 
-
-
-
-
-
-
-
         System.out.println();
 
 
