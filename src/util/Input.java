@@ -12,9 +12,7 @@ public class Input {
 private Scanner scanner = new Scanner(System.in);
 //===========================================================
     public String getString(){
-        System.out.println("Enter a string: ");
         String userResponse = scanner.nextLine();
-        System.out.printf("\nYou entered: %s\n", userResponse);
         return userResponse;
     }
 
@@ -25,14 +23,20 @@ private Scanner scanner = new Scanner(System.in);
         return userResponse;
     }
 
+//    public boolean yesNo(){
+////        System.out.println("Would you like to continue?");
+//        String userResponse = scanner.next();
+//        if(userResponse.equalsIgnoreCase("y") || userResponse.equalsIgnoreCase("yes")){
+//            return true;
+//        }else {
+//            return false;
+//        }
+//    }
+
     public boolean yesNo(){
-        System.out.println("Would you like to continue?");
-        String userResponse = scanner.nextLine();
-        if(userResponse.equalsIgnoreCase("y") || userResponse.equalsIgnoreCase("yes")){
-            return true;
-        }else {
-            return false;
-        }
+        String userAnswer = scanner.next();
+        scanner.nextLine();
+        return userAnswer.equals("y");
     }
 
     public boolean yesNo(String prompt){
