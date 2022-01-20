@@ -8,12 +8,11 @@ public class Input {
 //        this.scanner = new Scanner(System.in);
 //    }
 
-
 private Scanner scanner = new Scanner(System.in);
-//===========================================================
+//=======================================================================================
     public String getString(){
-        String userResponse = scanner.nextLine();
-        return userResponse;
+        String userInput = scanner.nextLine();
+        return userInput;
     }
 
     public String getString(String prompt){
@@ -32,7 +31,7 @@ private Scanner scanner = new Scanner(System.in);
 //            return false;
 //        }
 //    }
-
+//=======================================================================================
     public boolean yesNo(){
         String userAnswer = scanner.next();
         scanner.nextLine();
@@ -48,43 +47,83 @@ private Scanner scanner = new Scanner(System.in);
             return false;
         }
     }
-
+//=======================================================================================
     public int getInt(int min, int max){
         System.out.printf("Please enter a number between %d and %d. \n", min, max);
-        int userNum = scanner.nextInt();
-        if(userNum > max || userNum < min){
+        int userNum;
+//          THIS IS THE TRY CATCH
+        try {
+            userNum = Integer.valueOf(this.getString());
+        } catch (NumberFormatException e) {
+            System.out.println("That is not an integer");
             return getInt(min, max);
         }
-        return userNum;
-    }
-    public int getInt(){
-        System.out.println("Enter a whole number: ");
-        int userNum = scanner.nextInt();
-        System.out.printf("You chose %d: ",userNum);
-        return userNum;
+//          END OF TRY CATCH
+        if(userNum > max || userNum < min){
+            System.out.println("That is not within the range.");
+            return getInt(min, max);
+        } else {
+            System.out.println("That is a valid integer.");
+            return userNum;
+        }
     }
 
+    public int getInt(){
+        System.out.println("Enter a whole number: ");
+        try {
+//        int userNum = scanner.nextInt();
+            return Integer.valueOf(this.getString());
+        } catch (NumberFormatException e) {
+        System.out.println("Not an integer.");
+        return getInt();
+        }
+    }
+    //=======================================================================================
     public double getDouble(double min, double max){
         System.out.printf("Please enter a number between %f and %f. \n", min, max);
-        double userNum = scanner.nextDouble();
-        if(userNum > max || userNum < min){
+//        double userNum = scanner.nextDouble();
+            double userNum;
+        try {
+            userNum = Double.valueOf(this.getString());
+        } catch (NumberFormatException e){
+            System.out.println("Number not in range.");
             return getDouble(min, max);
         }
-        return userNum;
+
+        if(userNum > max || userNum < min){
+            return getDouble(min, max);
+        } else {
+            System.out.print("Awesome! Here's your input: ");
+            return userNum;
+        }
     }
+
+//    public double getDouble(double min, double max){
+//        System.out.printf("Please enter a number between %f and %f. \n", min, max);
+//        double userNum = scanner.nextDouble();
+//        if(userNum > max || userNum < min){
+//            return getDouble(min, max);
+//        }
+//        return userNum;
+//    }
 
     public double getDouble(){
         System.out.println("Enter a whole number: ");
-        double userNum = scanner.nextDouble();
-        System.out.printf("You chose %f: ",userNum);
-        return userNum;
+//        double userNum = scanner.nextDouble();
+        try {
+            return Double.valueOf(this.getString());
+        } catch (NumberFormatException e) {
+        System.out.println("Not a 'double' number. Try again.");
+        return getDouble();
+        }
     }
 
-
-
-
-
-
+//    public double getDouble(){
+//        System.out.println("Enter a whole number: ");
+//        double userNum = scanner.nextDouble();
+//        System.out.printf("You chose %f: ",userNum);
+//        return userNum;
+//    }
 
 
 //==

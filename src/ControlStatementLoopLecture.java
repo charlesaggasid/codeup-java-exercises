@@ -17,9 +17,9 @@ public class ControlStatementLoopLecture {
 //        int sticksOfGum = sc.nextInt();
 //        System.out.printf("Enough gum: %b%n", sticksOfGum >= 23); //Enough for everyone in class.
 
-        System.out.println("How much wood could a woodchuck chuck?");
-        int chuckableWood = sc. nextInt();
-        System.out.printf("Got 'em: %b%n", chuckableWood > 0);
+//        System.out.println("How much wood could a woodchuck chuck?");
+//        int chuckableWood = sc. nextInt();
+//        System.out.printf("Got 'em: %b%n", chuckableWood > 0);
 
 //        System.out.println("How many seasons of Lizzie?");
 //        int lizzieSeasons = sc.nextInt();
@@ -58,14 +58,27 @@ public class ControlStatementLoopLecture {
 //                  number34 = sc.nextLine();
 //              }
 
-              do {
-                  System.out.println("How much could a woodchuck");
-                  chuckableWood = sc.nextInt();
-              } while (chuckableWood > 0);
+//              do {
+//                  System.out.println("How much could a woodchuck");
+//                  chuckableWood = sc.nextInt();
+//              } while (chuckableWood > 0);
+//
+//              for (int i = 1; i <= 20; i++) {
+//                  System.out.println(i);
+//              }
 
-              for (int i = 1; i <= 20; i++) {
-                  System.out.println(i);
-              }
+String str = "charlesjazper@gmail.com";
+String[] arrOfStr = str.split("@");
+
+for(String a : arrOfStr)
+    System.out.println(a);
+//
+//    StringBuilder sb = new StringBuilder("Java ");
+//    sb.append()
+
+
+
+
 
     }
 

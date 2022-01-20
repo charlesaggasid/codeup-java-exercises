@@ -23,9 +23,9 @@ import java.util.Scanner;
 //             Scanner myObj = new Scanner(System.in);
 //             System.out.println("Enter three words:");
 //
-//             String firstWord = myObj.next();
-//             String secondWord = myObj.next();
-//             String thirdWord = myObj.next();
+//             String firstWord = myObj.nextLine();
+//             String secondWord = myObj.nextLine();
+//             String thirdWord = myObj.nextLine();
 //
 //             System.out.printf("First word is: %s%n", firstWord);
 //             System.out.printf("Second word is: %s%n", secondWord);
@@ -61,8 +61,11 @@ import java.util.Scanner;
 //            System.out.println("Enter length of rectangle: ");
 //            String length = scanner.nextLine();
 
+
+
 float length, width, perimeter, area;
 Scanner scanAreaPerimeter = new Scanner(System.in);
+scanAreaPerimeter.useDelimiter("\n");
 
 //Input
             System.out.println("Enter length of rectangle: ");
@@ -74,6 +77,8 @@ Scanner scanAreaPerimeter = new Scanner(System.in);
             area = length * width;
             System.out.println("Perimeter of rectangle is " + perimeter + ".");
             System.out.println("Area of rectangle is " + area + ".");
+
+//            System.out.println(scanAreaPerimeter.delimiter());
 
         }
     }

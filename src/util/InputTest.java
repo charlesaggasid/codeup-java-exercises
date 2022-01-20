@@ -3,8 +3,11 @@ public class InputTest {
     public static void main(String[] args) {
         Input input = new Input(); //
 
+
+
+
 //===========================================================
-       input.getString("Enter fave color: ");
+//       input.getString("Enter fave color: ");
 //       String unoReverse  = input.getString();
 //       System.out.println(unoReverse);
 
@@ -12,7 +15,7 @@ public class InputTest {
 //       System.out.println(answer);
 //
 //       input.getInt(1,10);
-//       input.getInt();
+//       input.getInt(1,10);
 
 
 
@@ -46,6 +49,8 @@ public class InputTest {
 // double min, double max
 //        double userDouble2 = input.getDouble(1.00, 100.00);
 //        System.out.println("userDouble2: "+userDouble2);
+
+            input.getDouble(1,10);
 
 
 
