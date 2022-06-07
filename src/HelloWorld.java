@@ -2,10 +2,12 @@ public class HelloWorld {
     public static void main(String[] args) {
         int myFavoriteNumber;
         myFavoriteNumber = 8;
+        System.out.println(myFavoriteNumber);
 
         String myString;
         myString = "string";
-//        myString = 3.12; provided double
+        System.out.println(myString);
+//      myString = 3.12; provided double
 
         float myNumber;
         myNumber = 123;
